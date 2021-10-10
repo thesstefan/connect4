@@ -20,7 +20,7 @@ class MasterControllerFactory:
 
     @staticmethod
     def get_ui():
-        return PyGameUI() if settings["game"]["USE_GUI"] else ConsoleUI
+        return PyGameUI() if settings["game"]["USE_GUI"] else ConsoleUI()
 
     @staticmethod
     def get_controller():
